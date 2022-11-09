@@ -1,0 +1,44 @@
+.main {
+  margin-bottom: 110px;
+}
+
+.section__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 140%;
+  color: #080B13;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section__subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.section__subtitle .subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #080B13;
+}
+
+.section__items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.section__items .section__item {
+  margin: 20px 0;
+  width: 432px;
+  cursor: pointer;
+}
+.section__items .section__item .item__name {
+  text-align: center;
+  margin-top: 32px;
+}
+.section__items .section__item .item__cost {
+  text-align: center;
+  margin-top: 8px;
+}/*# sourceMappingURL=collection.css.map */

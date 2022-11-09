@@ -1,0 +1,161 @@
+.section__account {
+  display: flex;
+}
+.section__account .account__aside {
+  width: 20%;
+  margin-top: 80px;
+}
+.section__account .account__aside a {
+  display: block;
+  margin-bottom: 12px;
+}
+.section__account .account {
+  width: 80%;
+  margin-top: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 135%;
+  color: #080B13;
+}
+.section__account .account p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #080B13;
+  margin-bottom: 20px;
+}
+.section__account .account .no__orders {
+  text-align: center;
+  display: none;
+}
+.section__account .account .no__orders img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+.section__account .account .order__table {
+  display: none;
+  margin-bottom: 40px;
+}
+.section__account .account .order__table .table__row {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #080B13;
+  margin-bottom: 5px;
+}
+.section__account .account .order__table .table__row .table__id {
+  width: 11%;
+}
+.section__account .account .order__table .table__row .table__name {
+  width: 57%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section__account .account .order__table .table__row .table__date {
+  width: 8%;
+}
+.section__account .account .order__table .table__row .table__cost {
+  width: 8%;
+}
+.section__account .account .order__table .table__row .table__status {
+  width: 12%;
+}
+.section__account .account .order__table .table__row .order__paid {
+  color: #00AB26;
+}
+.section__account .account .order__active {
+  display: block;
+}
+.section__account .account__info {
+  margin: 80px 0;
+  width: 80%;
+}
+.section__account .account__info form {
+  display: flex;
+  gap: 50px;
+}
+.section__account .account__info .account__left, .section__account .account__info .account__right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.section__account .account__info .account__left div, .section__account .account__info .account__left a, .section__account .account__info .account__right div, .section__account .account__info .account__right a {
+  line-height: 50px;
+}
+.section__account .account__info .account__right {
+  position: relative;
+}
+.section__account .account__info .account__password {
+  color: white;
+  background-color: #080B13;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.section__account .account__info .hide__password {
+  display: none;
+}
+.section__account .account__info .show__password {
+  display: block;
+}
+.section__account .account__info .same__password {
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  color: red;
+}
+.section__account .account__info input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #080B13;
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+}
+.section__account .account__info .account__sex {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+.section__account .account__info .account__sex .sex__max, .section__account .account__info .account__sex .sex__woman {
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+}
+.section__account .account__info .account__sex input {
+  display: none;
+}
+.section__account .account__info .account__sex #man:checked ~ .sex__max, .section__account .account__info .account__sex #woman:checked ~ .sex__woman {
+  color: white;
+  background-color: #080B13;
+}
+.section__account .account__info button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #080B13;
+  height: 50px;
+  cursor: pointer;
+}
+.section__account .sort {
+  text-align: end;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: #080B13;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=account.css.map */

@@ -1,0 +1,239 @@
+.section__itempage {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.section__itempage .item__photo {
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+}
+.section__itempage .item__photo img {
+  width: 100%;
+}
+.section__itempage .item__photo .photo__arrow {
+  position: absolute;
+  top: 253px;
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  opacity: 0.9;
+  border-radius: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.section__itempage .item__photo .photo__arrow-left {
+  left: 16px;
+}
+.section__itempage .item__photo .photo__arrow-right {
+  right: 16px;
+}
+.section__itempage .item__photo .photo__carousel {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  position: absolute;
+  top: 14px;
+  left: 0px;
+}
+.section__itempage .item__photo .photo__slide {
+  width: 80px;
+  height: 2px;
+  background: #080B13;
+  opacity: 0.1;
+  cursor: pointer;
+}
+.section__itempage .item__photo .photo__slide-active {
+  opacity: 1;
+}
+.section__itempage .item__content {
+  max-width: 700px;
+  width: 100%;
+}
+.section__itempage .item__content .item__content-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 135%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.section__itempage .item__content .item__content-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 135%;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.section__itempage .item__content .item__content-color {
+  display: flex;
+}
+.section__itempage .item__content .item__color {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  margin-right: 32px;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+.section__itempage .item__content .color__milky {
+  background-color: #F4E1CC;
+}
+.section__itempage .item__content .color__border {
+  background-color: #262626;
+}
+.section__itempage .item__content .color__indigo {
+  background-color: #9FAED9;
+}
+.section__itempage .item__content .color__bolotny {
+  background-color: #56AA91;
+}
+.section__itempage .item__content .color__lightgrey {
+  background-color: #707070;
+}
+.section__itempage .item__content .color__brown {
+  background-color: #743821;
+}
+.section__itempage .item__content .color__orche {
+  background-color: #C89607;
+}
+.section__itempage .item__content .color__darkgreen {
+  background-color: #214133;
+}
+.section__itempage .item__content .item__color-active {
+  border: 1px solid rgba(60, 55, 55, 0.8);
+}
+.section__itempage .item__content .item__content-size {
+  display: flex;
+}
+.section__itempage .item__content .item__size {
+  width: 49px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 32px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.section__itempage .item__content .item__size-active {
+  border: 1px solid rgba(60, 55, 55, 0.8);
+}
+.section__itempage .item__content .item__content-button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background: rgba(60, 55, 55, 0.8);
+  opacity: 0.5;
+  display: inline-block;
+  padding: 12px 24px;
+  cursor: pointer;
+  margin-bottom: 36px;
+}
+.section__itempage .item__content .size__selected {
+  background: #080B13;
+  opacity: 1;
+}
+.section__itempage .item__content .go__button-card {
+  background: #00AB26;
+  opacity: 1;
+}
+.section__itempage .item__content .item__info {
+  display: flex;
+  position: relative;
+}
+.section__itempage .item__content .item__info div {
+  margin-right: 20px;
+}
+.section__itempage .item__content .item__description-name, .section__itempage .item__content .item__size-name, .section__itempage .item__content .item__comment-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+  opacity: 0.3;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.section__itempage .item__content .item__description-content, .section__itempage .item__content .item__size-content, .section__itempage .item__content .item__comment-content {
+  max-width: 700px;
+  width: 100%;
+  display: none;
+}
+.section__itempage .item__content .comments {
+  max-width: 700px;
+  width: 100%;
+}
+.section__itempage .item__content .comments .my__comment {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.section__itempage .item__content .comments .my__comment textarea {
+  width: 100%;
+  height: 4em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  padding: 10px;
+}
+.section__itempage .item__content .comments .my__comment button {
+  background-color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000;
+  padding: 6px 8px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section__itempage .item__content .comments .comment {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.section__itempage .item__content .comments .comment .comment__vote {
+  display: flex;
+}
+.section__itempage .item__content .comments .comment .comment__vote div {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.section__itempage .item__content .comments .comment .comment__text {
+  margin: 20px 0;
+}
+.section__itempage .item__content .comments .comment .vote__liked, .section__itempage .item__content .comments .comment .vote__disliked {
+  display: none;
+}
+.section__itempage .item__content .comments .comment .vote__like-quantity {
+  color: green;
+}
+.section__itempage .item__content .comments .comment .vote__dislike-quantity {
+  color: red;
+}
+.section__itempage .item__content .item__size-content table, .section__itempage .item__content .item__size-content th, .section__itempage .item__content .item__size-content td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.section__itempage .item__content .info__active {
+  opacity: 1;
+  display: block;
+}/*# sourceMappingURL=item.css.map */

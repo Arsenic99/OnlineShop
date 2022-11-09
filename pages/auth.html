@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/collection.css">
+    <link rel="stylesheet" href="../css/item.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <script src="https://use.fontawesome.com/bd75639979.js"></script>
+    <link href="https://use.fontawesome.com/bd75639979.css" media="all" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
+                    </div>
+                    <div class="categorie">
+                        <a href="./collection.html" class="navigation__link">Коллекции</a>
+                        <a href="#" class="navigation__link">Одежда</a>
+                        <a href="#" class="navigation__link">Аксессуары</a>
+                        <div class="categorie__dropdown">
+                            <div class="collection">
+                                <h2>Коллекции</h2>
+                                <a href="#" class="dropdown__item">KLASSIK</a>
+                                <a href="#" class="dropdown__item">COLLABORATIONS  </a>
+                                <a href="#" class="dropdown__item">COLORS</a>
+                                <a href="#" class="dropdown__item">NEAVEN</a>
+                                <a href="#" class="dropdown__item">SUPERSPORT</a>
+                            </div>
+                            <div class="cloth">
+                                <h2>Одежда</h2>
+                                <a href="#" class="dropdown__item">KLASSIK</a>
+                                <a href="#" class="dropdown__item">БРЮКИ</a>
+                                <a href="#" class="dropdown__item">ДЖИНСЫ</a>
+                                <a href="#" class="dropdown__item">ЖИЛЕТКИ</a>
+                                <a href="#" class="dropdown__item">КУРТКИ</a>
+                                <a href="#" class="dropdown__item">ОЛИМПИЙКИ</a>
+                                <a href="#" class="dropdown__item">ПИДЖАКИ</a>
+                                <a href="#" class="dropdown__item">РУБАШКИ</a>
+                                <a href="#" class="dropdown__item">СВИТШОТЫ</a>
+                                <a href="#" class="dropdown__item">ФУТБОЛКИ</a>
+                                <a href="#" class="dropdown__item">ШОРТЫ</a>
+                            </div>
+                            <div class="accessories">
+                                <h2>Аксессуары</h2>
+                                <a href="#" class="dropdown__item">СУМКИ</a>
+                                <a href="#" class="dropdown__item">НОСКИ</a>
+                                <a href="#" class="dropdown__item">ПАНАМЫ</a>
+                                <a href="#" class="dropdown__item">ШАПКИ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <a href="./card.html" class="navigation__link">Корзина
+                            <div class="card__status">
+                                (<span class="item__number">0</span>)
+                            </div>
+                        </a>
+                        <div class="navigation__link navigation__account">Аккаунт</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="section__breadcrumbs">
+                <a href="#">Аккаунт</a>
+            </div>
+            <div class="section__auth">
+                <div class="auth">
+                    <div class="auth__title">Войдите в аккаунт</div>
+                    <form action="" class="auth__form">
+                        <input type="text" placeholder="Ввелите email или номер телефона">
+                        <input type="password" placeholder="Введите пароль" class="auth__password">
+                        <i class="fa fa-eye fa-lg show__password-auth show__password-active" aria-hidden="true"></i>
+                        <i class="fa fa-eye-slash fa-lg hide__password-auth" aria-hidden="true"></i>
+                        <a href="#">Забыли пароль?</a>
+                        <button type="submit">Войти</button>
+                    </form>
+                    <div class="register">
+                        Нет аккаунта? <span class="register__button">Зарегистрироваться!</span>
+                    </div>
+                </div>
+                <div class="auth__aside">
+                    <img src="../img/Auth_photo.png" alt="">
+                </div>
+                <div class="registration">
+                    <div class="register__title">Создание нового аккаунта</div>
+                    <form action="" class="register__form">
+                        <input type="text" placeholder="Введите ваше имя">
+                        <input type="text" placeholder="Введите вашу фамилию">
+                        <input type="email" placeholder="Введите email">
+                        <input type="tel" placeholder="Введите ваше номер телефона">
+                        <input type="password" placeholder="Введите пароль" class="register__password">
+                        <input type="password" placeholder="Введите повторно пароль" class="register__password-repeat" onkeyup="checkRepeat()">
+                        <i class="fa fa-eye fa-lg show__password-register show__password-active" aria-hidden="true"></i>
+                        <i class="fa fa-eye-slash fa-lg hide__password-register" aria-hidden="true"></i>
+                        <div class="different__password">Пароли не совпадают</div>
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                    <div class="authentication">
+                        Уже есть аккаунт? <span class="auth__button">Войти</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="customer">
+                <div class="for__customer">
+                    <a href="#" class="footer__item">О бренде</a>
+                    <a href="#" class="footer__item">Campaign</a>
+                    <a href="#" class="footer__item">Уход</a>
+                    <a href="#" class="footer__item">Гарантия</a>
+                    <a href="#" class="footer__item">Магазин</a>
+                    <a href="#" class="footer__item">Доставка & Возвраты</a>
+                    <a href="#" class="footer__item">Telegram</a>
+                    <a href="#" class="footer__item">Instagram</a>
+                </div>
+                <div class="subscribe">
+                    <label for="email">Дарим 10% скидку за подписку</label>
+                    <div class="subscribe__form">
+                        <input type="email" name="email" placeholder="Введите email">
+                        <button>Подписаться</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

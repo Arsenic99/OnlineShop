@@ -1,0 +1,104 @@
+.section__auth {
+  display: flex;
+}
+.section__auth .auth, .section__auth .auth__aside {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: clip;
+  transition: all 0.5s ease-in-out;
+}
+.section__auth .registration {
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+.section__auth .auth__deactive {
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+.section__auth .registration__active {
+  width: 50%;
+  padding-left: 30px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.section__auth .auth__title, .section__auth .register__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #080B13;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.section__auth .register__title {
+  margin-top: 40px;
+}
+.section__auth .auth__form {
+  position: relative;
+}
+.section__auth .show__password-auth, .section__auth .hide__password-auth {
+  position: absolute;
+  top: 78px;
+  right: 42%;
+  display: none;
+  cursor: pointer;
+}
+.section__auth .register__form {
+  position: relative;
+}
+.section__auth .show__password-register, .section__auth .hide__password-register {
+  position: absolute;
+  top: 264px;
+  right: 42%;
+  display: none;
+  cursor: pointer;
+}
+.section__auth .show__password-active {
+  display: block;
+}
+.section__auth .register, .section__auth .authentication {
+  margin-top: 12px;
+}
+.section__auth .register span, .section__auth .authentication span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.section__auth .auth__aside img {
+  width: 100%;
+}
+.section__auth input {
+  display: block;
+  height: 50px;
+  width: 60%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #080B13;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+.section__auth .different__password {
+  display: none;
+  width: 50%;
+  color: red;
+  text-align: center;
+}
+.section__auth form button {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #080B13;
+  height: 40px;
+  width: 60%;
+  margin-top: 12px;
+  cursor: pointer;
+}/*# sourceMappingURL=auth.css.map */

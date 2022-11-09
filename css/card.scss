@@ -1,0 +1,108 @@
+.card{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    min-height: calc(100vh - 338px);
+}
+.orders{
+    width: 65%;
+}
+.order{
+    height: 220px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    padding: 10px;
+    &__img{
+        margin-right: 20px;
+        img{
+            height: 200px;
+            border-radius: 10px;
+        }
+    }
+    &__name{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #080B13;
+        margin-bottom: 18px;
+    }
+    &__article{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        color: rgba(60, 55, 55, 0.8);
+        margin-bottom: 18px;
+    }
+    &__size, &__color, &__quantity{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        display: flex;
+        align-items: flex-end;
+        color: #080B13;
+        margin-bottom: 18px;
+        span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 120%;
+            color: #080B13;
+        }
+    }
+    &__quantity{
+        .quantity__add, .quantity__substract{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: #080B13;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+    }
+    &__delete{
+        position: absolute;
+        bottom: 50%;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+.order:not(:last-child){
+    margin-bottom: 15px;
+}
+.card__side{
+    position: fixed;
+    right: 5%;
+    width: 30%;
+    height: fit-content;
+    //border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    .item__total{
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .item__quantity, .item__discount, .item__delivery{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .item__order{
+        margin: 25px 0 20px;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+        background-color: black;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+    }
+}

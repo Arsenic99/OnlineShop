@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/collection.css">
+    <link rel="stylesheet" href="../css/item.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <script src="https://use.fontawesome.com/bd75639979.js"></script>
+    <link href="https://use.fontawesome.com/bd75639979.css" media="all" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="container">
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="../index.html"><img src="../img/Logo.png" alt=""></a>
+                    </div>
+                    <div class="categorie">
+                        <a href="./collection.html" class="navigation__link">Коллекции</a>
+                        <a href="#" class="navigation__link">Одежда</a>
+                        <a href="#" class="navigation__link">Аксессуары</a>
+                        <div class="categorie__dropdown">
+                            <div class="collection">
+                                <h2>Коллекции</h2>
+                                <a href="#" class="dropdown__item">KLASSIK</a>
+                                <a href="#" class="dropdown__item">COLLABORATIONS  </a>
+                                <a href="#" class="dropdown__item">COLORS</a>
+                                <a href="#" class="dropdown__item">NEAVEN</a>
+                                <a href="#" class="dropdown__item">SUPERSPORT</a>
+                            </div>
+                            <div class="cloth">
+                                <h2>Одежда</h2>
+                                <a href="#" class="dropdown__item">KLASSIK</a>
+                                <a href="#" class="dropdown__item">БРЮКИ</a>
+                                <a href="#" class="dropdown__item">ДЖИНСЫ</a>
+                                <a href="#" class="dropdown__item">ЖИЛЕТКИ</a>
+                                <a href="#" class="dropdown__item">КУРТКИ</a>
+                                <a href="#" class="dropdown__item">ОЛИМПИЙКИ</a>
+                                <a href="#" class="dropdown__item">ПИДЖАКИ</a>
+                                <a href="#" class="dropdown__item">РУБАШКИ</a>
+                                <a href="#" class="dropdown__item">СВИТШОТЫ</a>
+                                <a href="#" class="dropdown__item">ФУТБОЛКИ</a>
+                                <a href="#" class="dropdown__item">ШОРТЫ</a>
+                            </div>
+                            <div class="accessories">
+                                <h2>Аксессуары</h2>
+                                <a href="#" class="dropdown__item">СУМКИ</a>
+                                <a href="#" class="dropdown__item">НОСКИ</a>
+                                <a href="#" class="dropdown__item">ПАНАМЫ</a>
+                                <a href="#" class="dropdown__item">ШАПКИ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <a href="./card.html" class="navigation__link">Корзина
+                            <div class="card__status">
+                                (<span class="item__number">0</span>)
+                            </div>
+                        </a>
+                        <div class="navigation__link navigation__account">Аккаунт</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="section__account">
+                <div class="account__aside">
+                    <a href="./account.html">Основное</a>
+                    <a href="./account/account__info.html">Данные</a>
+                    <a href="./account/history.html">История заказов</a>
+                    <a href="#">Выйти</a>
+                </div>
+                <div class="account">
+                    <div>Здравствуйте, <span> Арсен!</span><br></div>
+                    <div>
+                        <p>Заказы</p>
+                        <!--При отсутствии активных заказов-->
+                        <div class="no__orders ">
+                            <img src="../img/Shoopinng_bag.png" alt="">
+                            Чтобы сделать заказ, перейдите в каталог и добавьте вещи в корзину
+                        </div>
+                        <div class="order__table order__active">
+                            <div class="table__row">
+                                <div class="table__head table__id">Номер заказа</div>
+                                <div class="table__head table__name">Заказ</div>
+                                <div class="table__head table__date">Дата</div>
+                                <div class="table__head table__cost">Стоимость</div>
+                                <div class="table__head table__status">Статус</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__id">123456</div>
+                                <div class="table__name">Пиджак KLS Черный M, Брюки KLS Черный M, Рубашка KLS Белый M, Пиджак KLS Черный M, Брюки KLS Черный M, Рубашка KLS Белый M</div>
+                                <div class="table__date">20.09.2022</div>
+                                <div class="table__cost">22 500 $</div>
+                                <div class="table__status order__paid">Оплачен</div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__id">123457</div>
+                                <div class="table__name">Пиджак KLS Черный M</div>
+                                <div class="table__date">20.09.2022</div>
+                                <div class="table__cost">2 500 $</div>
+                                <div class="table__status">Ждет оплаты</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="customer">
+                <div class="for__customer">
+                    <a href="#" class="footer__item">О бренде</a>
+                    <a href="#" class="footer__item">Campaign</a>
+                    <a href="#" class="footer__item">Уход</a>
+                    <a href="#" class="footer__item">Гарантия</a>
+                    <a href="#" class="footer__item">Магазин</a>
+                    <a href="#" class="footer__item">Доставка & Возвраты</a>
+                    <a href="#" class="footer__item">Telegram</a>
+                    <a href="#" class="footer__item">Instagram</a>
+                </div>
+                <div class="subscribe">
+                    <label for="email">Дарим 10% скидку за подписку</label>
+                    <div class="subscribe__form">
+                        <input type="email" name="email" placeholder="Введите email">
+                        <button>Подписаться</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

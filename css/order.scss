@@ -1,0 +1,154 @@
+.contact__info{
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    input[type = text], input[type = number]{
+        height: 50px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: #080B13;
+        padding: 12px 16px;
+    }
+    input::placeholder{
+        opacity: 0.2;
+    }
+    .delivery__methods{
+        input{
+            display: none;
+        }
+        label{
+            display: inline-block;
+            max-width: 347px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    }
+    .delivery__method{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        background: #FFFFFF;
+        color: #080B13;
+    }
+    
+    #shop:checked + .method__shop, #door:checked + .method__door, #by__card:checked + .method__card, #by__cash:checked + .method__cash{
+        background: #080B13;
+        color: #FFFFFF;
+    }
+    .info__title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #080B13;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .info__subtitle{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #080B13;
+        margin-bottom: 8px;
+        display: block;
+    }
+    .town, .delivery__method, .adress, .points, .contact__name, .contact__phone, .contact__email, .payment__method, .agreement{
+        margin-bottom: 36px;
+    }
+    .payment__methods{
+        #by__card, #by__cash{
+            display: none;
+        }
+    }
+    .payment__method{
+        padding: 0px 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        border: 1px solid black;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .card__info{
+        height: 0px;
+        overflow: hidden;
+        max-width: 500px;
+        width: 100%;
+        margin: 10px auto;
+        .card__number, .card__date, .card__cvv
+        {
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0; 
+        }
+        }
+        .card__details{
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+        }
+    }
+    .card__lists{
+        max-width: 500px;
+        width: 100%;
+        margin: 10px auto;
+        .card__list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid black;
+            height: 32px;
+            padding-right: 5px;
+            margin-bottom: 5px;
+            .card__type{
+                height: 30px;
+            }
+        }
+    }
+    .card__hide{
+        display: none;
+    }
+    .agreement{
+        input[type = checkbox]{
+            margin-right: 5px;
+        }
+        a{
+            text-decoration: underline;
+        }
+    }
+    form{
+        button{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            text-align: center;
+            color: #FFFFFF;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+        }
+    }
+    .btn__active{
+        background: black;
+        opacity: 1;
+    }
+    .btn__deactive{
+        background: rgba(60, 55, 55, 0.8);
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,242 @@
+.section__itempage{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    .item__photo{
+        max-width: 550px;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .photo__arrow{
+            position: absolute;
+            top: 253px;
+            width: 48px;
+            height: 48px;
+            background: #FFFFFF;
+            opacity: 0.9;
+            border-radius: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .photo__arrow-left{
+            left: 16px;
+        }
+        .photo__arrow-right{
+            right: 16px;
+        }
+        .photo__carousel{
+            max-width: 550px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            gap: 5px;
+            position: absolute;
+            top: 14px;
+            left: 0px;
+        }
+        .photo__slide{
+            width: 80px;
+            height: 2px;
+            background: #080B13;
+            opacity: 0.1;
+            cursor: pointer;
+        }
+        .photo__slide-active{
+            opacity: 1;
+        }
+    }
+    .item__content{
+        max-width: 700px;
+        width: 100%;
+        .item__content-name{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 135%;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        .item__content-price{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 135%;
+            color: #000000;
+            margin-bottom: 32px;
+        }
+        .item__content-color{
+            display: flex;
+        }
+        .item__color{
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            margin-right: 32px;
+            cursor: pointer;
+            margin-bottom: 32px;
+        }
+        .color__milky{
+            background-color: #F4E1CC;
+        }
+        .color__border{
+            background-color: #262626;
+        }
+        .color__indigo{
+            background-color: #9FAED9;
+        }
+        .color__bolotny{
+            background-color: #56AA91;
+        }
+        .color__lightgrey{
+            background-color: #707070;
+        }
+        .color__brown{
+            background-color: #743821;
+        }
+        .color__orche{
+            background-color: #C89607;
+        }
+        .color__darkgreen{
+            background-color: #214133;
+        }
+        .item__color-active{
+            border: 1px solid rgba(60, 55, 55, 0.8);
+        }
+        .item__content-size{
+            display: flex;
+        }
+        .item__size{
+            width: 49px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin-right: 32px;
+            margin-bottom: 32px;
+            cursor: pointer;
+        }
+        .item__size-active{
+            border: 1px solid rgba(60, 55, 55, 0.8);
+        }
+        .item__content-button{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            text-align: center;
+            color: #FFFFFF;
+            background: rgba(60, 55, 55, 0.8);
+            opacity: 0.5;
+            display: inline-block;
+            padding: 12px 24px;
+            cursor: pointer;
+            margin-bottom: 36px;
+        }
+        .size__selected{
+            background: #080B13;
+            opacity: 1;
+        }
+        .go__button-card{
+            background: #00AB26;
+            opacity: 1;
+        }
+        .item__info{
+            display: flex;
+            position: relative;
+            div{
+                margin-right: 20px;
+            }
+        }
+        .item__description-name, .item__size-name, .item__comment-name{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            color: #000000;
+            opacity: 0.3;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+        
+        .item__description-content, .item__size-content, .item__comment-content{
+            max-width: 700px;
+            width: 100%;
+            display: none;
+        }
+        .comments{
+            max-width: 700px;
+            width: 100%;
+            .my__comment{
+                width: 100%;
+                margin-bottom: 10px;
+                    textarea{
+                        width: 100%;
+                        height: 4em;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: #000000;
+                        padding: 10px;
+                    }
+                    button{
+                        background-color: white;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: #000000;
+                        padding: 6px 8px;
+                        cursor: pointer;
+                        border: 1px solid black;
+                        border-radius: 5px;
+                    }
+            }
+            .comment{
+                width: 100%;
+                border: 1px solid black;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+                .comment__vote{
+                    display: flex;
+                    div{
+                        cursor: pointer;
+                        margin-right: 10px;
+                    }
+                }
+                .comment__text{
+                    margin: 20px 0;
+                }
+                .vote__liked, .vote__disliked{
+                    display: none;
+                }
+                .vote__like-quantity{
+                    color: green;
+                }
+                .vote__dislike-quantity{
+                    color: red;
+                }
+            }
+        }
+        .item__size-content{
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        }
+        .info__active{
+            opacity: 1;
+            display: block;
+        }
+    }
+}
