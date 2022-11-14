@@ -22,3 +22,22 @@ const navigation__account = document.querySelector('.navigation__account');
 navigation__account.addEventListener(("click"),()=>{
     window.location.href = "http://127.0.0.1:5500/pages/auth.html";
 })
+
+//Анимация бургер меню
+const burger__menu_btn = document.querySelector('.burger__menu-button');
+const burger__menu = document.querySelector('.side__navigation');
+const body = document.querySelector('body');
+
+burger__menu_btn.addEventListener(("click"),()=>{
+    burger__menu_btn.children[0].classList.toggle("burger__firstline");
+    burger__menu_btn.children[1].classList.toggle("burger__secondline");
+    burger__menu_btn.children[2].classList.toggle("burger__thirdline");
+    burger__menu.classList.toggle("burger__menu-active");
+    event.stopPropagation();
+})
+body.addEventListener(("click"),()=>{
+    burger__menu_btn.children[0].classList.remove("burger__firstline");
+    burger__menu_btn.children[1].classList.remove("burger__secondline");
+    burger__menu_btn.children[2].classList.remove("burger__thirdline");
+    burger__menu.classList.remove("burger__menu-active");
+})
