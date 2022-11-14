@@ -54,7 +54,6 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
 }
 .navigation__link {
   font-style: normal;
@@ -114,6 +113,7 @@ nav {
   align-items: center;
   width: 69%;
   transition: all 0s;
+  padding-right: 5%;
 }
 
 .categorie {
@@ -127,12 +127,13 @@ nav {
 .categorie__dropdown {
   position: absolute;
   top: 74px;
-  left: -45%;
+  left: -50%;
   width: -webkit-fill-available;
   display: none;
   justify-content: center;
   gap: 20px;
   padding-bottom: 50px;
+  background-color: #ffffff;
 }
 .categorie__dropdown div {
   width: 204px;
