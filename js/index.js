@@ -5,8 +5,6 @@ function itemsInCard(){
 let itemsInCard = JSON.parse(localStorage.getItem("card"));
 const item__number = Array.from(document.querySelectorAll('.item__number'));
 const card__status = Array.from(document.querySelectorAll('.card__status'));
-console.log(item__number);
-console.log(card__status);
 if (itemsInCard.length > 0) {
     item__number.map((item)=>{
         item.innerHTML = itemsInCard.length;
@@ -29,7 +27,6 @@ const navigation__account = Array.from(document.querySelectorAll('.navigation__a
 
 navigation__account.map((item)=>{
     item.addEventListener(("click"),()=>{
-        console.log(1);
         window.location.href = "http://127.0.0.1:5500/pages/auth.html";
     })
 })
