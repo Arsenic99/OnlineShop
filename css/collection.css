@@ -1,5 +1,7 @@
 .main {
   margin-bottom: 110px;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .section__title {
@@ -15,6 +17,7 @@
 .section__subtitle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 12px;
 }
 .section__subtitle .subtitle {
@@ -27,12 +30,21 @@
 
 .section__items {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 33%);
+  -moz-column-gap: 0.5%;
+       column-gap: 0.5%;
 }
 .section__items .section__item {
   margin: 20px 0;
-  width: 432px;
+  max-width: 427px;
+  width: 100%;
   cursor: pointer;
+}
+.section__items .section__item .item__img {
+  width: 100%;
+}
+.section__items .section__item .item__img img {
+  width: 100%;
 }
 .section__items .section__item .item__name {
   text-align: center;
@@ -41,4 +53,30 @@
 .section__items .section__item .item__cost {
   text-align: center;
   margin-top: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .section__items {
+    grid-template-columns: repeat(2, 49%);
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section__title {
+    font-size: 8vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section__subtitle {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .section__items {
+    grid-template-columns: repeat(1, 100%);
+    -moz-column-gap: 0%;
+         column-gap: 0%;
+  }
 }/*# sourceMappingURL=collection.css.map */

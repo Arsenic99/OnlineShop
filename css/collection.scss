@@ -1,5 +1,7 @@
 .main{
     margin-bottom: 110px;
+    max-width: 1440px;
+    width: 100%;
 }
 .section__title{
     font-style: normal;
@@ -13,6 +15,7 @@
 .section__subtitle{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .subtitle{
         font-style: normal;
         font-weight: 500;
@@ -24,11 +27,19 @@
 }
 .section__items{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: .5%;
     .section__item{
         margin: 20px 0;
-        width: 432px;
+        max-width: 427px;
+        width: 100%;
         cursor: pointer;
+        .item__img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
         .item__name{
             text-align: center;
             margin-top: 32px;
@@ -37,5 +48,28 @@
             text-align: center;
             margin-top: 8px;
         }
+    }
+}
+@media screen and (max-width: 700px){
+    .section__items{
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section__title {
+        font-size: 8vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section__subtitle{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .section__items{
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 0%;
     }
 }
