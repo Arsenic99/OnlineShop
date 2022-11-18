@@ -100,17 +100,19 @@
                 <a href="#">Оформление заказа</a>
             </div>
             <div class="contact__info">
-                <form action="">
+                <form action="" method="get">
                     <div class="town">
                         <label for="town" class="info__title">Ваш город</label>
                         <input type="text" id="town" placeholder="Введите ваш город">
                     </div>
                     <div class="delivery__methods">
                         <div class="info__title">Способ доставки</div>
-                        <input type="radio" id="shop" name="delivery" checked>
-                        <label for="shop" class="delivery__method method__shop">Магазин</label>
-                        <input type="radio" id="door" name="delivery">
-                        <label for="door" class="delivery__method method__door">До двери</label>
+                            <div class="methods">
+                                <input type="radio" id="shop" name="delivery" value="shop" checked>
+                                <label for="shop" class="delivery__method method__shop">Магазин</label>
+                                <input type="radio" id="door" name="delivery" value="door">
+                                <label for="door" class="delivery__method method__door">До двери</label>
+                            </div>
                     </div>
                     <div class="adress">
                         <label for="adress" class="info__title">Адрес</label>

@@ -28,6 +28,12 @@
             border: 1px solid black;
             cursor: pointer;
         }
+        .methods{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 1%;
+        }
     }
     .delivery__method{
         font-style: normal;
@@ -99,7 +105,7 @@
         .card__details{
             display: flex;
             justify-content: space-between;
-            gap: 100px;
+            gap: 20px;
         }
     }
     .card__lists{
@@ -150,5 +156,25 @@
     .btn__deactive{
         background: rgba(60, 55, 55, 0.8);
         opacity: 0.6;
+    }
+}
+@media screen and (max-width: 425px) {
+    .contact__info input[type=text], .contact__info input[type=number] {
+        font-size: 16px;
+    }
+    .contact__info .info__title {
+        font-size: 16px;
+    }
+    .contact__info .payment__method {
+        font-size: 16px;
+    }
+    .contact__info .delivery__method {
+        font-size: 16px;
+    }
+    .card__info{
+        font-size: 14px;
+        input[type="checkbox"]{
+            margin-top: 10px;
+        }
     }
 }

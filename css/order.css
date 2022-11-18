@@ -34,6 +34,12 @@
   border: 1px solid black;
   cursor: pointer;
 }
+.contact__info .delivery__methods .methods {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
 .contact__info .delivery__method {
   font-style: normal;
   font-weight: 400;
@@ -101,7 +107,7 @@
 .contact__info .card__info .card__details {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: 20px;
 }
 .contact__info .card__lists {
   max-width: 500px;
@@ -147,4 +153,25 @@
 .contact__info .btn__deactive {
   background: rgba(60, 55, 55, 0.8);
   opacity: 0.6;
+}
+
+@media screen and (max-width: 425px) {
+  .contact__info input[type=text], .contact__info input[type=number] {
+    font-size: 16px;
+  }
+  .contact__info .info__title {
+    font-size: 16px;
+  }
+  .contact__info .payment__method {
+    font-size: 16px;
+  }
+  .contact__info .delivery__method {
+    font-size: 16px;
+  }
+  .card__info {
+    font-size: 14px;
+  }
+  .card__info input[type=checkbox] {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=order.css.map */
