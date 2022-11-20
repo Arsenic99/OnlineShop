@@ -1,28 +1,29 @@
 .section__auth{
     display: flex;
+    margin-top: 10px;
     .auth, .auth__aside{
         width: 50%;
         overflow: hidden;
         text-overflow: clip;
-        transition: all .5s ease-in-out;
+        transition: all .8s ease-in-out;
     }
     .registration{
         width: 0%;
         overflow: hidden;
         white-space: nowrap;
-        transition: all .5s ease-in-out;
+        transition: all .8s ease-in-out;
     }
     .auth__deactive{
         width: 0%;
         overflow: hidden;
         white-space: nowrap;
-        transition: all .5s ease-in-out;
+        transition: all .8s ease-in-out;
     }
     .registration__active{
         width: 50%;
         padding-left: 30px;
         overflow: hidden;
-        transition: all .5s ease-in-out;
+        transition: all .8s ease-in-out;
     }
     .auth__title, .register__title{
         font-style: normal;
@@ -42,7 +43,7 @@
     .show__password-auth, .hide__password-auth{
         position: absolute;
         top: 78px;
-        right: 42%;
+        right: 14%;
         display: none;
         cursor: pointer;
     }
@@ -52,7 +53,7 @@
     .show__password-register, .hide__password-register{
         position: absolute;
         top: 264px;
-        right: 42%;
+        right: 14%;
         display: none;
         cursor: pointer;
     }
@@ -74,7 +75,7 @@
     input{
         display: block;
         height: 50px;
-        width: 60%;
+        width: 90%;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -89,7 +90,7 @@
         color: red;
         text-align: center;
     }
-    form{
+    .form{
         button{
             display: block;
             font-style: normal;
@@ -106,4 +107,119 @@
         }
     }
 }
-
+@media screen and (max-width: 992px) {
+    .section__auth{
+        height: 530px;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        transition: transform 5s;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        input{
+            font-size: 16px;
+        }
+    }
+    .auth__aside{
+        display: none;
+    }
+    .auth, .registration{
+        height: 530px;
+        position: absolute;
+        width: 70% !important;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        .form{
+            text-align: center;
+            button{
+                width: 90%;
+            }
+        }
+    }
+    .auth{
+        transform: rotateY(0deg);
+        .auth__form{
+            a{
+                position: absolute;
+                left: 30px;
+            }
+            button{
+                margin-top: 42px;
+            }
+        }
+    }
+    .registration{
+        transform: rotateY(180deg);
+        .register__title{
+            width: 90%;
+        }
+    }
+    .auth__deactive{
+        transform: rotateY(180deg);
+    }
+    .registration__active{
+        transform: rotateY(360deg);
+    }
+    .auth__form{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .section__auth{
+        input{
+            font-size: 14px;
+        }
+    }
+    .auth, .registration{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section__auth{
+        input{
+            font-size: 13px;
+            padding: 12px 16px;
+        }
+    }
+    .auth, .registration{
+        width: 95% !important;
+    }
+}
+@media screen and (max-width: 375px) {
+    .section__auth{
+        input{
+            font-size: 13px;
+            padding: 10px 5px;
+            height: 50px;
+        }
+    }
+    .section__auth .auth__title, .section__auth .register__title {
+        font-size: 16px;
+        
+    }
+}
+@media screen and (max-width: 330px) {
+    .section__auth{
+        input{
+            font-size: 12px;
+            padding: 10px 5px;
+            height: 40px;
+        }
+        .form{
+            button{
+                font-size: 14px;
+            }
+        }
+    }
+    .section__auth .auth__title, .section__auth .register__title, .section__breadcrumbs, .auth__form a, .register, .authentication {
+        font-size: 14px;
+        
+    }
+    .section__auth .show__password-register, .section__auth .hide__password-register {
+        top: 221px;
+    }
+    .section__auth .show__password-auth, .section__auth .hide__password-auth {
+        top: 64px;
+    }
+}
