@@ -28,12 +28,17 @@ const navigation__account = Array.from(document.querySelectorAll('.navigation__a
 
 navigation__account.map((item)=>{
     item.addEventListener(("click"),()=>{
-        if(window.location.href !== "hhttps://arsenic99.github.io/OnlineShop/pages/account/account__info.html" || window.location.href !== "hhttps://arsenic99.github.io/OnlineShop/pages/account/history.html")
+        if(window.location.href !== "https://arsenic99.github.io/OnlineShop/pages/account/account__info.html" || window.location.href !== "https://arsenic99.github.io/OnlineShop/pages/account/history.html")
         {
             window.location.href = "./auth.html";
             console.log(1);
         }
-        else{
+        else
+        if(window.location.href !== "https://arsenic99.github.io/OnlineShop/index.html"){
+            window.location.href = ".pages/auth.html";
+        }
+        else
+        {
             window.location.href = "../auth.html";
         }
     })

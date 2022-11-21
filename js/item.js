@@ -79,7 +79,7 @@ item__content_button.addEventListener(("click"), ()=>{
             quantity: 1,
             img: img.src
         }
-        let card = JSON.parse(localStorage.getItem("card"));
+        let card = JSON.parse(localStorage.getItem("card") ?? '[]');
         let hasInCArd = false;
         card.map((item1)=>{
             if(item1.name === item.name && item1.color === item.color && item1.size === item.size){
