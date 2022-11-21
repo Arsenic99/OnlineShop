@@ -80,7 +80,16 @@ item__content_button.addEventListener(("click"), ()=>{
             img: img.src
         }
         let card = JSON.parse(localStorage.getItem("card"));
-        card.push(item)
+        let hasInCArd = false;
+        card.map((item1)=>{
+            if(item1.name === item.name && item1.color === item.color && item1.size === item.size){
+                item1.quantity += item.quantity;
+                hasInCArd = true;
+            }
+        })
+        if(!hasInCArd){
+            card.push(item);
+        }
         localStorage.setItem("card", JSON.stringify(card));
         itemsInCard();
     }
