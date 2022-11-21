@@ -70,6 +70,6 @@ const auth__login = document.querySelector('.auth__login');
 
 auth__bttn.addEventListener(("click"),()=>{
     //if(auth__login.value === 'admin' && auth__password.value === 'admin'){
-        window.location.href = "http://127.0.0.1:5500/pages/account.html"
+        window.location.href = "./account.html"
     //}
 })

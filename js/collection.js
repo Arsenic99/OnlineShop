@@ -10,6 +10,6 @@ section__item.map((item)=>{
             mainBread: item.parentElement.parentElement.parentElement.children[0].innerHTML
         }
         localStorage.setItem("chosenItem", JSON.stringify(chosenItem));
-        location.href = "http://127.0.0.1:5500/pages/item.html";
+        location.href = "./item.html";
     })
 })

@@ -98,6 +98,6 @@ total__quantity.innerHTML = total;
 //Оформление заказа
 item__order.addEventListener(("click"),()=>{
     if(storedItem.length !== 0){
-        window.location.href = "http://127.0.0.1:5500/pages/order.html";
+        window.location.href = "./order.html";
     }
 })

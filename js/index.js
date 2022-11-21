@@ -27,7 +27,14 @@ const navigation__account = Array.from(document.querySelectorAll('.navigation__a
 
 navigation__account.map((item)=>{
     item.addEventListener(("click"),()=>{
-        window.location.href = "http://127.0.0.1:5500/pages/auth.html";
+        if(window.location.href !== "hhttps://arsenic99.github.io/OnlineShop/pages/account/account__info.html" || window.location.href !== "hhttps://arsenic99.github.io/OnlineShop/pages/account/history.html")
+        {
+            window.location.href = "./auth.html";
+            console.log(1);
+        }
+        else{
+            window.location.href = "../auth.html";
+        }
     })
 })
 
