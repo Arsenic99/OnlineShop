@@ -5,20 +5,22 @@ function itemsInCard(){
 let itemsInCard = JSON.parse(localStorage.getItem("card"));
 const item__number = Array.from(document.querySelectorAll('.item__number'));
 const card__status = Array.from(document.querySelectorAll('.card__status'));
-if (itemsInCard.length > 0) {
-    item__number.map((item)=>{
-        item.innerHTML = itemsInCard.length;
-    })
-    
-    card__status.map((item)=>{
-        item.style.display = "inline-block";
-    })
-}
-else
-{
-    card__status.map((item)=>{
-        item.style.display = "none";
-    })
+if (itemsInCard !== null || itemsInCard !== undefined){
+    if (itemsInCard.length > 0) {
+        item__number.map((item)=>{
+            item.innerHTML = itemsInCard.length;
+        })
+        
+        card__status.map((item)=>{
+            item.style.display = "inline-block";
+        })
+    }
+    else
+    {
+        card__status.map((item)=>{
+            item.style.display = "none";
+        })
+    }
 }
 }
 itemsInCard();
