@@ -48,23 +48,29 @@
   line-height: 120%;
   color: #080B13;
   margin-bottom: 5px;
+  gap: 5px;
 }
 .section__account .account .order__table .table__row .table__id {
-  width: 11%;
+  max-width: 63px;
+  width: 100%;
 }
 .section__account .account .order__table .table__row .table__name {
-  width: 57%;
+  max-width: 590px;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
 }
 .section__account .account .order__table .table__row .table__date {
-  width: 8%;
+  max-width: 83px;
+  width: 100%;
 }
 .section__account .account .order__table .table__row .table__cost {
-  width: 8%;
+  max-width: 83px;
+  width: 100%;
 }
 .section__account .account .order__table .table__row .table__status {
-  width: 12%;
+  max-width: 125px;
+  width: 100%;
 }
 .section__account .account .order__table .table__row .order__paid {
   color: #00AB26;
@@ -88,6 +94,9 @@
 }
 .section__account .account__info .account__left div, .section__account .account__info .account__left a, .section__account .account__info .account__right div, .section__account .account__info .account__right a {
   line-height: 50px;
+}
+.section__account .account__info .account__left {
+  flex-shrink: 2;
 }
 .section__account .account__info .account__right {
   position: relative;
@@ -158,4 +167,86 @@
   line-height: 120%;
   color: #080B13;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 670px) {
+  .section__account {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .section__account .account__aside, .section__account .account__info {
+    width: 100%;
+    margin-top: 0;
+  }
+  .section__account .account__aside {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__account .account__info input {
+    font-size: 16px;
+  }
+  .section__account .account__info form {
+    gap: 10px;
+  }
+  .section__account .account {
+    width: 100%;
+    font-size: 20px;
+  }
+  .section__account .account p {
+    font-size: 18px;
+  }
+  .section__account .account .order__table .table__row {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 425px) and (orientation: portrait) {
+  .section__account .account__info .account__left, .section__account .account__info .account__right {
+    row-gap: 50px;
+    width: 90%;
+  }
+  .section__account .account__info .account__right {
+    position: absolute;
+    top: 152px;
+  }
+  .section__account .account__info .same__password {
+    top: 483px;
+  }
+  .section__account .account__info .account__left div, .section__account .account__info .account__left a, .section__account .account__info .account__right div, .section__account .account__info .account__right a {
+    line-height: 40px;
+  }
+  .section__account .account__info input {
+    height: 40px;
+  }
+  .footer {
+    margin-top: 115px;
+  }
+  .section__account {
+    font-size: 13px;
+  }
+  .section__account .account {
+    width: 100%;
+    font-size: 18px;
+  }
+  .section__account .account p {
+    font-size: 16px;
+  }
+  .section__account .account .order__table .table__row {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 425px) and (orientation: landscape) {
+  .section__account .account__info .account__left, .section__account .account__info .account__right {
+    row-gap: 50px;
+    width: 90%;
+  }
+  .section__account .account__info .account__right {
+    position: absolute;
+    top: 152px;
+  }
+}
+@media screen and (max-width: 325px) and (orientation: portrait) {
+  .section__account {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=account.css.map */

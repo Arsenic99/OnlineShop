@@ -2,6 +2,7 @@
 const account__password = document.querySelector('.account__password');
 const hide__password = Array.from(document.querySelectorAll('.hide__password'));
 const same__password = document.querySelector('.same__password');
+const account__info = document.querySelector('.account__info');
 
 if (account__password){
     account__password.addEventListener(("click"),()=>{
@@ -22,8 +23,6 @@ if (account__password){
         })
     })
 }
-
-
 
 //Проверка на одиннаковость пароля
 function samePass(){
