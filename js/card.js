@@ -1,5 +1,5 @@
 //Получаем данные из локального хранилища
-let storedItem = JSON.parse(localStorage.getItem("card"));
+let storedItem = JSON.parse(localStorage.getItem("card") ?? '[]');
 const item__order = document.querySelector('.item__order');
 
 //Функция для выгрузки данных из корзины в HTML
