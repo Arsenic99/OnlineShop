@@ -29,7 +29,7 @@ const navigation__account = Array.from(document.querySelectorAll('.navigation__a
 navigation__account.map((item)=>{
     item.addEventListener(("click"),()=>{
         if(window.location.href === "https://arsenic99.github.io/OnlineShop/index.html" || window.location.href === "https://arsenic99.github.io/OnlineShop/"){
-            window.location.href = "/pages/auth.html";
+            window.location.href = "pages/auth.html";
         }
         else
         if(window.location.href !== "https://arsenic99.github.io/OnlineShop/pages/account/account__info.html" || window.location.href !== "https://arsenic99.github.io/OnlineShop/pages/account/history.html")
