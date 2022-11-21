@@ -1,6 +1,6 @@
 //Количество товаров в корзине
 
-itemsInCard();
+
 function itemsInCard(){
 let itemsInCard = JSON.parse(localStorage.getItem("card"));
 const item__number = Array.from(document.querySelectorAll('.item__number'));
@@ -21,6 +21,7 @@ else
     })
 }
 }
+itemsInCard();
 //Ссылка на аккаунт
 
 const navigation__account = Array.from(document.querySelectorAll('.navigation__account'));
